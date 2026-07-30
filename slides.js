@@ -12,7 +12,6 @@ let myslides = [
     "A13.png", "A14.png", "A15.png", "A16.png", "A17.png", "A18.png", 
     "A19.png", "A20.png", "A21.png", "A22.png", "A23.png"
 ]
-
 // this function gives random value to select any key
 numSl = 0;
 answer = myslides[numSlides];
@@ -41,7 +40,7 @@ function slideIt() {
     mainObject.className = changeAlignment;
     
     numSl++;
-    return mainObject.src = `./fr/${answer.toString()}`;
+    return mainObject.src = answer.toString();
     
 }
 
@@ -56,6 +55,7 @@ function action() {
 /*function stop() {
     return clearInterval(dont);
 }*/
+    
 
 
 
