@@ -7,10 +7,10 @@ let dont // stop doing the sliding
 let mainObject = document.getElementById("you");
 // class values stored in an array
 let myslides = [
-    "./fr/A1.png", "./fr/A2.png", "./fr/A3.png", "./fr/A4.png", "./fr/A5.png", "./fr/A6.png", 
-    "./fr/A7.png", "./fr/A8.png", "./fr/A9.png", "./fr/A10.png", "./fr/A11.png", "./fr/A12.png", 
-    "./fr/A13.png", "./fr/A14.png", "./fr/A15.png", "./fr/A16.png", "./fr/A17.png", "./fr/A18.png", 
-    "./fr/A19.png", "./fr/A20.png", "./fr/A21.png", "./fr/A22.png", "./fr/A23.png"
+    "A1.png", "A2.png", "A3.png", "A4.png", "A5.png", "A6.png", 
+    "A7.png", "A8.png", "A9.png", "A10.png", "A11.png", "A12.png", 
+    "A13.png", "A14.png", "A15.png", "A16.png", "A17.png", "A18.png", 
+    "A19.png", "A20.png", "A21.png", "A22.png", "A23.png"
 ]
 
 // this function gives random value to select any key
@@ -25,7 +25,7 @@ function numberingSlides() {
 }
 function alignment() {
     let vertical = [
-        "./fr/A1.png", "./fr/A9.png", "./fr/A16.png", "./fr/A17.png", "./fr/A21.png", "./fr/A22.png", "./fr/A23.png"
+        "A1.png", "A9.png", "A16.png", "A17.png", "A21.png", "A22.png", "A23.png"
     ];
     if (vertical.includes(answer)) {
        return "vertical"
@@ -41,7 +41,7 @@ function slideIt() {
     mainObject.className = changeAlignment;
     
     numSl++;
-    return mainObject.src = answer.toString();
+    return mainObject.src = `./fr/${answer.toString()}`;
     
 }
 
